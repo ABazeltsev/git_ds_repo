@@ -14,4 +14,4 @@ def get_weekend(weekday):
     if weekday not in weekend: return 0
     return 1
 #-----Function for 11.4.2
-get_weekend(7)
+print(get_weekend(7))
