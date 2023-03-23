@@ -14,4 +14,19 @@ def get_weekend(weekday):
     if weekday not in weekend: return 0
     return 1
 #-----Function for 11.4.2
-print(get_weekend(7))
+
+
+#-----Function for 11.4.4
+def get_experience(arg):
+    month_key_words = ['месяц', 'месяцев', 'месяца']
+    year_key_words = ['год', 'лет', 'года']
+    args_splited = arg.split(' ')
+    month = 0
+    year = 0
+    for i in range(len(args_splited)):
+        if args_splited[i] in month_key_words:
+            month = args_splited[i-1]
+        if args_splited[i] in year_key_words:
+            year = args_splited[i-1]
+    return int(year)*12 + int(month)    
+#-----Function for 11.4.4
