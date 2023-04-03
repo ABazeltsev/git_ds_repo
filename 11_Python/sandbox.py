@@ -30,3 +30,16 @@ def get_experience(arg):
             year = args_splited[i-1]
     return int(year)*12 + int(month)    
 #-----Function for 11.4.4
+
+
+#-----Function for 11.6.12
+def get_daytime(time):
+    if 0 <= time <= 6:
+        return 'night'
+    elif 6 < time <= 12:
+        return 'morning'
+    elif 12 < time <= 18:
+        return 'day'
+    elif 18 < time <= 23:
+        return 'evening'
+#-----Function for 11.6.12
