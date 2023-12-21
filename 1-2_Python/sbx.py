@@ -23,4 +23,35 @@
 # num_abs = '\n'.join(num_lst)
 # print(num_abs)
 #----------------------8.6
-help(str.format)
+# help(str.format)
+
+#--------------------------------------------Python 2--------------------------------------------
+
+# lst = range(1,11)
+# print(lst)
+# lst = list(lst)
+# print(lst)
+# invert_lst = lst[::-1]
+# print(invert_lst)
+
+# a = 1
+# b = 2
+# c = 3
+# orderds = []
+# orderds.append(a)
+# orderds.append(b)
+# orderds.append(c)
+# print(orderds)
+# print(orderds.count(1))
+# orderds.clear()
+# print(orderds)
+a = [1, 2, 3]
+b = a.copy()
+c = a[:]
+print(b, c)
+a.extend(b)
+print(a)
+a.reverse()
+print(a)
+a.sort()
+print(a)
