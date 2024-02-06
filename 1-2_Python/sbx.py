@@ -55,8 +55,44 @@
 # print(a)
 # a.sort()
 # print(a)
-a = 'asdadsd'
-print(len(a))
-b = 'asdkljjvkdj'
-import numpy as np 
+# #--------------------------------------------Dictionary--------------------------------------------
+# phones = {'+79033923029': 'Ivan Ivanov', '+78125849204': 'Kirill Smirnov', '+79053049385': 'Mark Parkhomenko', '+79265748370': 'Ekaterina Dmitrieva', '+79030598495': 'Ruslan Belyi'}
+# print(phones.keys())
+# phones.clear()
+# # print(phones)
+# test_dict = {1:"one", 2:"two", 3:"three",}
+# # print(test_dict[4]) # KeyError
+# print(test_dict.get(4, 'DefaultValue'))
+# print(test_dict.get(3))
+# test_dict.update({4:'four', 5:'five'})
+# print(test_dict)
+# test_dict.update({5:'PYAT'})
+# print(test_dict)
+# test_dict.pop(5)
+# print(test_dict)
+# complex_dict = {'name':'Alex', 'age':30, 'bio':
+#                 {'company':'Yandex',
+#                  'job':'Developer'}}
+# print(complex_dict['bio']['job'])
 
+
+# #--------------------------------------------Sets--------------------------------------------
+# test_set = {1, 2, 3, 4, 5}
+# str_set = set('sdlkjaslkdjalkfa')
+# print(str_set)
+# str_set.add('O')
+# print(str_set)
+# str_set.add('newlettersinstring')
+# print(str_set)
+# str_set.discard('O') # no KeyError if missing
+# str_set.discard('a') # KeyError if missing
+# print(str_set)
+
+cluster1 = {"item1", "item2", "item3", "item4"}
+cluster2 = {"item2", "item3", "item5", "item7"}
+print('cl1: ', cluster1)
+print('union cl: ', cluster1.union(cluster2))
+cluster3 = cluster1.union(cluster2)
+print('cl3: ', cluster3)
+intcl = cluster1.intersection(cluster2)
+print('intersection: ', intcl)
