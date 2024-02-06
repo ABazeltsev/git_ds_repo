@@ -45,13 +45,18 @@
 # print(orderds.count(1))
 # orderds.clear()
 # print(orderds)
-a = [1, 2, 3]
-b = a.copy()
-c = a[:]
-print(b, c)
-a.extend(b)
-print(a)
-a.reverse()
-print(a)
-a.sort()
-print(a)
+# a = [1, 2, 3]
+# b = a.copy()
+# c = a[:]
+# print(b, c)
+# a.extend(b)
+# print(a)
+# a.reverse()
+# print(a)
+# a.sort()
+# print(a)
+a = 'asdadsd'
+print(len(a))
+b = 'asdkljjvkdj'
+import numpy as np 
+
