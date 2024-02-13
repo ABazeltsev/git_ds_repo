@@ -88,11 +88,18 @@
 # str_set.discard('a') # KeyError if missing
 # print(str_set)
 
-cluster1 = {"item1", "item2", "item3", "item4"}
-cluster2 = {"item2", "item3", "item5", "item7"}
-print('cl1: ', cluster1)
-print('union cl: ', cluster1.union(cluster2))
-cluster3 = cluster1.union(cluster2)
-print('cl3: ', cluster3)
-intcl = cluster1.intersection(cluster2)
-print('intersection: ', intcl)
+# cluster1 = {"item1", "item2", "item3", "item4"}
+# cluster2 = {"item2", "item3", "item5", "item7"}
+# print('cl1: ', cluster1)
+# print('union cl: ', cluster1.union(cluster2))
+# cluster3 = cluster1.union(cluster2)
+# print('cl3: ', cluster3)
+# intcl = cluster1.intersection(cluster2)
+# print('intersection: ', intcl)
+
+# #--------------------------------------------Type transformation--------------------------------------------
+
+float_var = float(10)
+int_var = int(10.2)
+print(int_var)
+print(str(float_var + int_var))
