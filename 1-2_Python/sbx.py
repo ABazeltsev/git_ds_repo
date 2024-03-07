@@ -99,7 +99,97 @@
 
 # #--------------------------------------------Type transformation--------------------------------------------
 
-float_var = float(10)
-int_var = int(10.2)
-print(int_var)
-print(str(float_var + int_var))
+# float_var = float(10)
+# int_var = int(10.2)
+# print(int_var)
+# print(str(float_var + int_var))
+# str_var = str(float_var + int_var)
+
+
+# #--------------------------------------------Operations--------------------------------------------
+# tst_str = 'qwepoi'
+# print(tst_str[::-1])
+# str1 = "коту тащdт уток"
+# str1 = str1.replace(" ", "")
+# str1 = str1.lower()
+# print(str1)
+# print(str1 == str1[::-1])
+
+# a, b, c = 2, 5, 8
+# print((a**2 > b) and (a**2 > c))
+# a = 154
+# b = a
+# print(b)
+# print(a is b)
+# a = 3
+# print(a is b)
+# print(b)
+
+
+# arrival_of_goods = {
+#     '148902': {
+#         'Футболка с принтом': 180,
+#         'Свитшот черный': 245,
+#         'Джинсы серые': 252
+#     },
+#     '893516': {
+#         'Футболка с принтом': 43,
+#         'Свитшот черный': 64,
+#         'Джинсы черные': 102
+#     },
+#     '893481': {
+#         'Кружка керамическая': 35,
+#         'Свитшот черный': 10,
+#         'Джинсы сервые': 14
+#     }
+# }
+# print(arrival_of_goods.get('148902'))
+
+# #--------------------------------------------Conditions--------------------------------------------
+
+# mx = 0
+# s = 0
+
+# x = -5
+# if x < 0:
+#     s = x
+
+# if x > mx:
+#     mx = x
+
+# print(s)
+# print(mx)
+# age = 18
+# name = 'Jora'
+# print('Hi {}, ue age is {}'.format(name, age))
+# num = 0
+# if num:
+#     print(num, ' is not 0')
+# else:
+#     print(num, ' is 0')
+
+
+dish_time_dict = {
+    'Рамен с говядиной': 15,
+    'Суши': 18,
+    'Лагман с курицей': 20,
+    'Лагман с говядиной': 24,
+    'Плов с курицей': 28
+}
+street_time_dict  = {
+    'Дзержинский': 39,
+    'Солнечный': 40,
+    'Заводской': 27,
+    'Гагаринский': 43,
+    'Кировский': 37,
+    'Октябрьский': 34
+}
+dish, street = 'Плов с курицей', 'Солнечный'
+if street not in street_time_dict: print('No express in your area')
+elif dish not in dish_time_dict: print('Wrong dish')
+else:
+    t_dish = dish_time_dict.get(dish)
+    t_street = street_time_dict.get(street)
+    delay = t_dish + t_street - 60
+    if delay < 0: print('Coureer will get in time')
+    else: print('Coureer will late on', delay, 'minutes')
