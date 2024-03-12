@@ -216,3 +216,31 @@
 #         raise ValueError('Pizdish')
 #     else: print ('Your age is', age)
 # except ValueError as e: print(e)
+# #--------------------------------------------FOR WHILE--------------------------------------------
+# incomes = [120, 38.5, 40.5, 80]
+# total = 0
+# for cash in incomes:
+#     total += cash
+# print(total)
+
+# num_list = [98, 24, 23, 12, 3]
+# p = 1
+# for i in num_list:
+#     p *= i
+# print(p)
+
+# range_lst = list(range(0, 101))
+# print(range_lst)
+
+# n = 4
+# m = n
+# result = 1
+# for i in range(2, n+1):
+#     m -= 1
+#     result = result * i
+#     #print(result)
+# print(result)
+
+# n = 5
+# for i in range(1, n+1):
+#     print('*'*i)
