@@ -169,27 +169,50 @@
 #     print(num, ' is 0')
 
 
-dish_time_dict = {
-    'Рамен с говядиной': 15,
-    'Суши': 18,
-    'Лагман с курицей': 20,
-    'Лагман с говядиной': 24,
-    'Плов с курицей': 28
-}
-street_time_dict  = {
-    'Дзержинский': 39,
-    'Солнечный': 40,
-    'Заводской': 27,
-    'Гагаринский': 43,
-    'Кировский': 37,
-    'Октябрьский': 34
-}
-dish, street = 'Плов с курицей', 'Солнечный'
-if street not in street_time_dict: print('No express in your area')
-elif dish not in dish_time_dict: print('Wrong dish')
-else:
-    t_dish = dish_time_dict.get(dish)
-    t_street = street_time_dict.get(street)
-    delay = t_dish + t_street - 60
-    if delay < 0: print('Coureer will get in time')
-    else: print('Coureer will late on', delay, 'minutes')
+# dish_time_dict = {
+#     'Рамен с говядиной': 15,
+#     'Суши': 18,
+#     'Лагман с курицей': 20,
+#     'Лагман с говядиной': 24,
+#     'Плов с курицей': 28
+# }
+# street_time_dict  = {
+#     'Дзержинский': 39,
+#     'Солнечный': 40,
+#     'Заводской': 27,
+#     'Гагаринский': 43,
+#     'Кировский': 37,
+#     'Октябрьский': 34
+# }
+# dish, street = 'Плов с курицей', 'Солнечный'
+# if street not in street_time_dict: print('No express in your area')
+# elif dish not in dish_time_dict: print('Wrong dish')
+# else:
+#     t_dish = dish_time_dict.get(dish)
+#     t_street = street_time_dict.get(street)
+#     delay = t_dish + t_street - 60
+#     if delay < 0: print('Coureer will get in time')
+#     else: print('Coureer will late on', delay, 'minutes')
+
+#------5-7-----
+
+# test_date = '16.04.2019 15:59'
+# #print(type(test_date))
+# date = test_date.split()[0].split('.')
+# day, month, year = test_date.split()[0].split('.')
+# print(day, month, year)
+
+# #--------------------------------------------Try-Except--------------------------------------------
+
+# try:
+#     i = 1/0
+# except ZeroDivisionError as e: print('zero division', e) #may be multiply blocks
+# else: print('this wont print in this case')
+# finally: print('this will be print anyway')
+
+# try:
+#     age = int(input('Enter your age'))
+#     if age < 0 or age > 100:
+#         raise ValueError('Pizdish')
+#     else: print ('Your age is', age)
+# except ValueError as e: print(e)
