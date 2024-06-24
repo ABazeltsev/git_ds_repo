@@ -244,3 +244,110 @@
 # n = 5
 # for i in range(1, n+1):
 #     print('*'*i)
+# num_list = [1, 10, 3, -5]
+# num_list.sort()
+# for i in range(len(num_list)):
+#     print('Element {}: {}'.format(i, num_list[i]))
+
+
+# num_list = [10, 4, 4, 21, 2, 0, -10]
+# count_even = 0
+# for i in num_list:
+#     if i%2 == 0:
+#         count_even += 1
+#         print(i, 'is even')
+# print(count_even)
+
+
+# mixture_list = [True, 1, -10, 'hello', False, 'string_1', 123, 2.5, [1, 2], 'another'] 
+# for elem in mixture_list:
+#     if type(elem) == str:
+#         print(elem, 'is string')
+
+
+# word_list = ["My", "name", "is", "Sergei", "EOS", "I'm", "from", "Moscow", "EOS"]
+# text = ''
+# for word in word_list:
+#     if word != 'EOS':
+#         text += ' '
+#         text += word
+#     else: text += '.'
+# text = text.strip()
+# print(text)
+
+# weight_limit = 400
+# people = 67
+# summary_w = 0
+# count = 0
+# while summary_w <= weight_limit:
+#     summary_w += people
+#     count += 1
+# print('total count', count -1, 'owerweight:', summary_w - weight_limit)
+
+
+# number = 1
+# value = 151
+# while number**2 < value:
+#     print(number, 'still less')
+#     number += 1
+# print(number - 1, 'is closest with square:', (number-1)**2)
+
+# test_var = 0
+# for i in range(10):
+#    test_var += i
+#    print(test_var)
+
+# num = 0 
+# while True:
+#     num += 1
+#     if num 10:
+#         break
+#     print('New client #', num)
+
+# secret_passwords = {
+#     'Enot': 'ulybaka',
+#     'Agent12': '1password1',
+#     'MouseLulu': 'myshkanaruhka'
+# }
+# while True:
+#     name = input('Insert login: ')
+#     if name in secret_passwords:
+#         pas = input('Insert password: ')
+#         if pas == secret_passwords[name]:
+#             print('Login complete')
+#             break
+#         else: print('Wrong password')
+    
+#     else: print('Wrong login')
+
+# x = 1
+# n = 156
+# while x**2 % n != 0:
+#     x += 1
+#     print(x)
+# print(x**2)
+
+# x = 1
+# cnt = 1
+# val = 1000
+# while x < val:
+#     x = x * cnt
+#     cnt += 1
+# print(x)
+
+# money = 8000
+# percent = 0.08
+# target_money = 15000
+# year_count = 0
+# while money < target_money:
+#     money = money + (money * percent)
+#     year_count += 1
+# print(money, year_count)
+
+damdge = 174
+health = 3014
+seconds_num = 0
+while health > 0:
+    health -= damdge
+    seconds_num += 1
+print(health, seconds_num)
