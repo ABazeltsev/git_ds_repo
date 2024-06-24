@@ -344,10 +344,30 @@
 #     year_count += 1
 # print(money, year_count)
 
-damdge = 174
-health = 3014
-seconds_num = 0
-while health > 0:
-    health -= damdge
-    seconds_num += 1
-print(health, seconds_num)
+# damdge = 174
+# health = 3014
+# seconds_num = 0
+# while health > 0:
+#     health -= damdge
+#     seconds_num += 1
+# print(health, seconds_num)
+
+# 1 1 2 3 5 8 13 21 34
+# fib_list = [1, 1, 2]
+# print(fib_list)
+# for i in range(10):
+#     fib_list.append(fib_list[len(fib_list)-1] + fib_list[len(fib_list)-2])
+# print(fib_list)
+# FIBANACHI
+# a = 1
+# b = 1
+# i = 2
+# n = 10
+# lst = [1, 1]
+# while i < n:
+#     c = a + b
+#     i += 1
+#     a = b
+#     b = c
+#     lst.append(c)
+# print(lst)
