@@ -371,3 +371,14 @@
 #     b = c
 #     lst.append(c)
 # print(lst)
+
+#------Nested loops
+m_lst = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for i in range(len(m_lst)):
+    for j in range(len(m_lst[0])):
+        print(m_lst[i][j])
