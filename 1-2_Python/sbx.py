@@ -373,12 +373,78 @@
 # print(lst)
 
 #------Nested loops
-m_lst = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# m_lst = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-for i in range(len(m_lst)):
-    for j in range(len(m_lst[0])):
-        print(m_lst[i][j])
+# for i in range(len(m_lst)):
+#     for j in range(len(m_lst[0])):
+#         print(m_lst[i][j])
+
+# hours = range(9, 24, 2)
+# minutes = range(0, 60, 15)
+# for hour in hours:
+#     for minute in minutes:
+#         if minute == 0: print(hour, ':0', minute)
+#         else: print(hour, ':', minute)
+
+# str_list = ['text', 'morning', 'notepad', 'television', 'ornament']
+# cnt = 0
+# cnt2 = 0
+# for word in str_list:
+#     cnt2 += word.count('e')
+#     for letter in word:
+#         if letter == 'e': cnt += 1
+# print(cnt)
+# print(cnt2)
+
+# row = [9, 17, 2, 18, 1, 23]
+# min = row[0]
+# for i in range(1, len(row)):
+#     if row[i] < min: min = row[i]
+# print(min)
+
+# random_matrix = [
+#     [9, 2, 1],
+#     [2, 5, 3],
+#     [4, 8, 5]
+# ]
+# max_value_rows = []
+# for i in range(0, len(random_matrix)):
+#     max_val = random_matrix[i][0]
+#     for j in range(0, len(random_matrix[i])):
+#         if random_matrix[i][j] > max_val: max_val = random_matrix[i][j]
+#     max_value_rows.append(max_val)
+# print(max_value_rows)
+
+# student_scores = [
+#     [56, 90, 80],
+#     [80, 86, 92],
+#     [91, 76, 89],
+#     [91, 42, 60],
+#     [65, 30, 90]
+# ]
+# math = 0
+# inform = 0
+# rus = 0
+# for i in range(0, len(student_scores)):
+#     math += student_scores[i][0]
+#     inform += student_scores[i][1]
+#     rus += student_scores[i][2]
+# print(math/len(student_scores))
+
+# is_square = True
+# test_matrix = [
+#     [1, 2, 3],
+#     [7, -1, 2],
+#     [123, 2, -1],
+#     [123, 5, 1]
+# ]
+# line = len(test_matrix[0])
+# for row in test_matrix:
+#     if len(row) != line or len(row) != len(test_matrix):
+#         is_square = False
+# print(is_square)
+
