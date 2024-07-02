@@ -448,3 +448,81 @@
 #         is_square = False
 # print(is_square)
 
+# temp = [[25, 27, 28, 26, 27, -26, -25, -2, 26], [21, 22, 28, 27, 28, 26, 25, 19, 26], [-19, 21, 25, -27, 28, 25, 21, 20, 26]]
+
+# # После обработки
+# ## temp = [[25, 27, 28, 26, 27, 26, 25, 2, 26], [21, 22, 28, 27, 28, 26, 25, 19, 26], [19, 21, 25, 27, 28, 25, 21, 20, 26]]
+# for i in range(0, len(temp)):
+#     for j in range(0, len(temp[0])):
+#         if temp[i][j] < 0: temp[i][j] = temp[i][j] * (-1)
+#         #print(day)    
+# print(temp)
+
+# customer_satisfaction = [
+#     [0.87, 0.56, 0.77],
+#     [0.22, 0.46, 0.56, 0.89, 0.95],
+#     [0.45, 0.44, 0.68],
+#     [0.73, 0.88, 0.95, 0.49]
+# ]
+# month_satisfaction = []
+
+# for i in range(0, len(customer_satisfaction)):
+#     month_sum = 0
+#     for j in range(0, len(customer_satisfaction[i])):
+#         month_sum += customer_satisfaction[i][j]
+#     month_satisfaction.append(round(month_sum/(len(customer_satisfaction[i])), 2))
+# print(month_satisfaction)
+
+#####-----------------------enumerate()------------------
+
+# user_dynamics = [-5, 2, 4, 8, 12, -7, 5]
+# for i, v in enumerate(user_dynamics):
+#     if v < 0:
+#         print("Day {} dynamics: {}".format(i+1, v))
+
+# str_list = ['Hello', 'my', 'name', 'is', 'Ezeikel', 'I', 'like', 'knitting']
+# ## cut_str_list = [[0, 'Hel'], [1, 'my'], [2, 'nam'], [3, 'is'], [4, 'Eze'], [5, 'I'], [6, 'lik'], [7, 'kni']]
+# cut_str_list = []
+# for i, v in enumerate(str_list):
+#     cut_str_list.append([i, v[0:3]])
+# print(cut_str_list)
+
+#####-----------------------break & continue------------------
+# loot_lst = ['Sword', 'Dagger', 'Great Axe', 'Blunderbus', 'Hatchet']
+# backpack = []
+# for item in loot_lst:
+#     if len(backpack) == 3:
+#         print('Inventory is full!!')
+#         break
+#     backpack.append(item)
+# print(backpack)
+
+
+# n = 81
+# # Создаём бесконечный цикл
+# while True:
+#     # Проверяем условие, что остаток от деления на 3 равен 0.
+#     if n % 3 == 0:
+#         # Если условие выполняется, новое число — результат целочисленного деления на 3.
+#         n = n // 3 
+#         # Проверяем условие, что в результате деления получили 1.
+#         if n == 1: 
+#             # Выводим утвердительное сообщение
+#             print('n - is the power of the number 3!')
+#             # Выходим из цикла
+#             break 
+#     else: 
+#         # В противном случае выводим сообщение-опровержение
+#         print('n - is not the power of the number 3!') 
+#         # Выходим из цикла
+#         break 
+n = 333
+origin = n
+while True:
+    if n % 2 == 0 and n != 1:
+        n = n // 2
+    elif n % 2 != 0 and n != 1:
+        n = ((n * 3) + 1) // 2
+    elif n == 1:
+        print(n, origin)
+        break
