@@ -516,13 +516,13 @@
 #         print('n - is not the power of the number 3!') 
 #         # Выходим из цикла
 #         break 
-n = 333
-origin = n
-while True:
-    if n % 2 == 0 and n != 1:
-        n = n // 2
-    elif n % 2 != 0 and n != 1:
-        n = ((n * 3) + 1) // 2
-    elif n == 1:
-        print(n, origin)
-        break
+# n = 333
+# origin = n
+# while True:
+#     if n % 2 == 0 and n != 1:
+#         n = n // 2
+#     elif n % 2 != 0 and n != 1:
+#         n = ((n * 3) + 1) // 2
+#     elif n == 1:
+#         print(n, origin)
+#         break
